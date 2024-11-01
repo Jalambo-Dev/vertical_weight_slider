@@ -56,6 +56,7 @@ class VerticalWeightSlider extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             ListWheelScrollView.useDelegate(
+              physics: const BouncingScrollPhysics(),
               itemExtent: controller.itemExtent,
               diameterRatio: diameterRatio,
               controller: controller,
